@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/user/user",
+    "pages/topicDetail/topicDetail",
+    "pages/topicPost/topicPost"    
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "#FFF",
+    "navigationBarTitleText": "CNode-XDL",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "话题",
+      "iconPath": "images/topic.png",
+      "selectedIconPath": "images/topic-selected.png"
+    },{
+      "pagePath": "pages/topicPost/topicPost",
+      "text": "发表",
+      "iconPath": "images/post.png",
+      "selectedIconPath": "images/post-selected.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/user.png",
+      "selectedIconPath": "images/user-selected.png"
+    }],
+    "color": "#8a8a8a",
+    "selectedColor": "#37a809"
+  }
+}

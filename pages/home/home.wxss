@@ -1,0 +1,24 @@
+#nav{
+  width: 750rpx;
+  height: 40px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav view {
+  font-size: 14px;
+  color: #80bd01;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+#nav view.current{
+  background: #80bd01;
+  color: #FFF;
+}
+
+#topics .topic{
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 5px;
+}
