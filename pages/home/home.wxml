@@ -20,4 +20,4 @@
 </view>
 
 <!-- 回到顶部按钮 -->
-<include src="../layouts/backToTop.wxml" />  
+<include src="../layouts/backToTop.wxml" />

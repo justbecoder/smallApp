@@ -4,6 +4,7 @@
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
+<<<<<<< HEAD
 		"minified": true
 	},
 	"compileType": "weapp",
@@ -20,6 +21,25 @@
 			"list": []
 		},
 		"conversation": {
+=======
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.0",
+	"appid": "wx17a1baf2435163e1",
+	"projectname": "CNode-XDL",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+>>>>>>> ab51f0ee40de335822f9d9d444a0cd68e5cd0e87
 			"current": -1,
 			"list": []
 		}

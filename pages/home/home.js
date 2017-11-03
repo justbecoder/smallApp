@@ -58,6 +58,10 @@ Page({
 
         // 手动关闭Loading状态
         wx.hideLoading()
+        console.log(res.data.data)
+        that.setData({
+          topics: res.data.data
+        })
       }
     })
   },
@@ -118,6 +122,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
+  
   },
 
   /**
