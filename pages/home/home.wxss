@@ -1,0 +1,61 @@
+#nav{
+  width: 750rpx;
+  height: 40px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#nav view {
+  font-size: 14px;
+  color: #80bd01;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+#nav view.current{
+  background: #80bd01;
+  color: #FFF;
+}
+
+/* 话题列表 */
+#topics {
+  background: #FFF;
+}
+#topics .topic{
+  height: 36px;
+  border-bottom: 1px solid #CCC;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+#topics .topic .img{
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+#topics .topic .img image{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+#topics .topic .tab{
+  width: 32px;
+  min-width: 32px;
+  height: 18px;
+  padding: 2px 4px;
+  background: #e5e5e5;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 5px;
+  color: #999;
+  margin-left: 4px;
+}
+#topics .topic .title{
+  flex-grow: 1;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

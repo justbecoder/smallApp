@@ -1,0 +1,11 @@
+<view>
+  <!-- <button type='primary' size='mini'>登录</button> -->
+  <button wx:if="{{ !user }}" type='primary' size='default' bindtap='login'>登录</button>
+
+  <!-- 用户的个人信息面板  -->
+  <view wx:else>
+    <text>昵称： {{ user.loginname }}</text>
+    <image src="{{ user.avatar_url }}"></image>
+  </view>
+  
+</view>

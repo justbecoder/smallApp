@@ -1,0 +1,23 @@
+<view id="nav">
+  <view data-tab="all" bindtap='switchTab' class="{{ tab == 'all' ? 'current' : '' }}">全部</view>
+  <view data-tab="good" bindtap='switchTab' class="{{ tab == 'good' ? 'current' : '' }}">精华</view>
+  <view data-tab="share" bindtap='switchTab' class="{{ tab == 'share' ? 'current' : '' }}">分享</view>
+  <view data-tab="ask" bindtap='switchTab' class="{{ tab == 'ask' ? 'current' : '' }}">问答</view>
+  <view data-tab="job" bindtap='switchTab' class="{{ tab == 'job' ? 'current' : '' }}">招聘</view>
+  <view data-tab="dev" bindtap='switchTab' class="{{ tab == 'dev' ? 'current' : '' }}">客户端测试</view>
+</view>
+
+<!-- 条件渲染  -->
+<view id="topics" wx:if="{{ topics.length }}">
+  <!-- 列表遍历  -->
+  <navigator url='/pages/topicDetail/topicDetail?id={{ topic.id }}' class='topic' wx:for="{{ topics }}" wx:for-item="topic" wx:key="{{ topic.id }}">
+    <view class='img'>
+      <image binderror='imageError' lazy-load="true" src='{{ topic.author.avatar_url }}'></image> 
+    </view>
+    <view class="tab">{{ '精华' }}</view>
+    <view class='title'>{{ topic.title }}</view>
+  </navigator>
+</view>
+
+<!-- 回到顶部按钮 -->
+<include src="../layouts/backToTop.wxml" />  

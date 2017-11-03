@@ -1,0 +1,3 @@
+<view id="backToTop" wx:if="{{ isTop }}" bindtap="backToTop">
+  回到顶部
+</view>
